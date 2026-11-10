@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#262342" />
+  <meta name="description" content="PLAYHAUS is a joyful toy store concept with curated playthings, creative gifts and colorful discoveries." />
+  <title>PLAYHAUS — A little more wonder.</title>
+  <link rel="icon" href="images/toys/rainbow.webp" type="image/webp" />
+  <link rel="stylesheet" href="styles.css?v=4" />
+  <script src="app.js?v=4" defer></script>
+</head>
+<body>
+  <div class="notice-bar"><span>✳</span> PLAYHAUS IS A FICTIONAL DEMO STORE <span class="notice-middle">•</span> <span>EXPLORE. PLAY. IMAGINE.</span> <span>✳</span></div>
+  <header class="site-header" id="top">
+    <div class="header-inner container">
+      <a class="brand" href="#top" aria-label="Playhaus home"><span class="brand-flower" aria-hidden="true">✳</span><span>play<span class="brand-different">haus</span><small>THE HAPPY TOY CLUB</small></span></a>
+      <nav class="desktop-nav" aria-label="Main navigation"><a href="#collections">The collections</a><a href="#shop">Shop all</a><a href="#gift-finder">Gift finder</a><a href="#story">Our little story</a></nav>
+      <div class="header-actions"><button id="search-toggle" class="head-icon" aria-label="Search toys" title="Search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button><button id="wishlist-toggle" class="head-icon count-icon" aria-label="Show saved toys" title="Saved toys"><svg viewBox="0 0 24 24"><path d="M20.7 8.3c0 4.5-8.7 10.1-8.7 10.1S3.3 12.8 3.3 8.3a4.4 4.4 0 0 1 8.7-1.1 4.4 4.4 0 0 1 8.7 1.1Z"/></svg><span class="action-count" id="wish-count">0</span></button><button id="cart-toggle" class="cart-trigger" aria-label="Open shopping bag"><svg viewBox="0 0 24 24"><path d="M4.5 8h15l-1 12h-13L4.5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span>Bag <b id="cart-count">0</b></span></button><button id="mobile-menu-toggle" class="head-icon menu-trigger" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button></div>
+    </div>
+    <div class="mobile-nav" id="mobile-nav"><a href="#collections">The collections</a><a href="#shop">Shop all toys</a><a href="#gift-finder">Gift finder</a><a href="#story">Our story</a></div>
+    <div class="search-panel" id="search-panel"><div class="container search-panel-inner"><div class="search-input-wrap"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><input id="global-search" type="search" placeholder="Search teddy bears, race cars, puzzles..." aria-label="Search toy products" autocomplete="off" /><button id="search-close" aria-label="Close search">✕</button></div><div id="search-results" class="search-results"></div></div></div>
+  </header>
+  <main>
+    <section class="hero container" aria-label="Welcome to Playhaus">
+      <div class="hero-copy">
+        <div class="eyebrow hero-eyebrow"><span class="sparkle-icon">✴</span> NOT YOUR ORDINARY TOY STORE</div>
+        <h1>More <em>play.</em><br>More <span class="hero-wonder">wonder<span class="sketch-under"></span></span><span class="period">.</span></h1>
+        <p>For tiny hands, wild imaginations, and the beautiful chaos of being a kid. Meet toys made for the moments that matter.</p>
+        <div class="hero-actions"><a href="#shop" class="btn btn-yellow">Explore the toybox <span class="arrow-circ">↗</span></a><a href="#gift-finder" class="text-link">Find the perfect gift <span>↗</span></a></div>
+        <div class="hero-mini"><div class="mini-avatars"><img src="images/toys/teddy.webp" alt="Teddy bear"/><img src="images/toys/dino.webp" alt="Toy dinosaur"/><img src="images/toys/unicorn.webp" alt="Plush unicorn"/></div><span><b>Playtime, reimagined.</b><small>Explore 16 delightful sample toys</small></span></div>
+      </div>
+      <div class="hero-stage" id="hero-stage" aria-label="A collection of joyful toys">
+        <div class="hero-lime-blob" aria-hidden="true"></div><div class="hero-orbit" aria-hidden="true"></div><span class="hero-asterisk" aria-hidden="true">✳</span>
+        <div class="hero-toy hero-toy-main"><img src="images/toys/teddy.webp" alt="Brown plush teddy bear" /></div>
+        <div class="hero-toy hero-toy-robot"><img src="images/toys/robot.webp" alt="Retro wind-up toy robot" /></div>
+        <div class="hero-toy hero-toy-rainbow"><img src="images/toys/rainbow.webp" alt="Pastel rainbow stacking rings" /></div>
+        <div class="hero-sticker sticker-left"><span>100%</span><small>IMAGINATION</small></div>
+        <div class="hero-sticker sticker-right">LET'S<br>PLAY! <span>✧</span></div>
+        <div class="hero-stage-label">little toys. big feelings.</div>
+      </div>
+      <span class="hero-bottom-note">A WHOLE WORLD OF PLAY ↓</span>
+    </section>
+    <div class="ticker" aria-label="Store collections"><div class="ticker-inner">PLAYFUL BY NATURE <span>✷</span> MADE FOR LITTLE EXPLORERS <span>✷</span> THE GIFT OF WONDER <span>✷</span> PLAYFUL BY NATURE <span>✷</span> MADE FOR LITTLE EXPLORERS <span>✷</span> THE GIFT OF WONDER <span>✷</span></div></div>
+    <section class="collections-section container reveal" id="collections">
+      <div class="section-heading"><div><span class="eyebrow">01 / PICK YOUR ADVENTURE</span><h2>What are we <i>playing?</i></h2></div><p>Every little personality deserves a whole lot of possibilities.</p></div>
+      <div class="collection-grid">
+        <button class="collection-card col-plush" data-category="Plush"><span class="coll-title">Cuddle<br>club <span>↗</span></span><img src="images/toys/unicorn.webp" alt="Unicorn plush toy"/><span class="coll-foot">SOFT & SQUISHY</span></button>
+        <button class="collection-card col-learning" data-category="Learning"><span class="coll-title">Little<br>geniuses <span>↗</span></span><img src="images/toys/rainbow.webp" alt="Learning stacking toy"/><span class="coll-foot">LEARN THROUGH PLAY</span></button>
+        <button class="collection-card col-vehicles" data-category="Vehicles"><span class="coll-title">Zoom<br>zone <span>↗</span></span><img src="images/toys/racer.webp" alt="Red toy race car"/><span class="coll-foot">READY, SET, GO!</span></button>
+        <button class="collection-card col-creative" data-category="Creative"><span class="coll-title">Wonder<br>world <span>↗</span></span><img src="images/toys/robot.webp" alt="Retro toy robot"/><span class="coll-foot">DREAM BIG</span></button>
+      </div>
+    </section>
+    <section class="shop-section" id="shop"><div class="container reveal">
+      <div class="section-heading shop-heading"><div><span class="eyebrow">02 / THE HAPPY SHELF</span><h2>Good things come <i>in toyboxes.</i></h2></div><p>Handpicked for big smiles and even bigger stories. Tap any toy to explore.</p></div>
+      <div class="shop-toolbar"><div class="category-chips" id="category-chips" aria-label="Filter by category"></div><div class="shop-sort"><span id="results-count">16 toys</span><select id="sort-select" aria-label="Sort toys"><option value="featured">Featured picks</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="name">Name A–Z</option></select></div></div>
+      <div class="product-grid" id="product-grid"></div><div id="no-results" class="no-results" hidden><div>✳</div><h3>No toys found in this treasure chest.</h3><p>Try another search or category!</p><button id="reset-filters" class="btn btn-dark">See all the toys ↗</button></div>
+      <div class="shop-bottom"><span>THE WHOLE TOYBOX IS RIGHT HERE</span><span>↗</span></div>
+    </div></section>
+    <section class="feature-section container reveal" aria-label="Playful gift inspiration"><div class="feature-inner"><div class="feature-text"><span class="eyebrow">A LITTLE SPARK GOES A LONG WAY</span><h2>Let their<br><em>imagination</em><br>run wild.</h2><p>From first discoveries to make-believe worlds, every toy opens the door to a new story.</p><a href="#gift-finder" class="btn btn-white">Find a little magic <span class="arrow-circ">↗</span></a></div><div class="feature-image"><div class="feature-star">✳</div><img src="images/toys/dollhouse.webp" alt="Pink toy dollhouse"/><div class="feature-tag">PLAY IS THE BEST KIND OF LEARNING <span>✷</span></div></div></div></section>
+    <section class="gift-section container reveal" id="gift-finder"><div class="gift-heading"><span class="eyebrow">03 / SOMEONE SPECIAL IN MIND?</span><h2>We know <i>just the thing.</i></h2><p>A tiny gift finder for big occasions. Choose an age and a budget, and watch the magic happen.</p></div><div class="gift-finder"><div class="gift-controls"><div class="gift-question"><span class="question-numb">01</span><h3>How old is your little adventurer?</h3><div class="gift-options" id="age-options"><button data-age="any" class="selected">Any age</button><button data-age="0-2">0–2 years</button><button data-age="3-5">3–5 years</button><button data-age="6-8">6–8 years</button><button data-age="9+">9+ years</button></div></div><div class="gift-question"><span class="question-numb">02</span><h3>What's your gifting budget?</h3><div class="gift-options" id="budget-options"><button data-budget="any" class="selected">Surprise me!</button><button data-budget="2000">Under Rs. 2,000</button><button data-budget="3500">Under Rs. 3,500</button><button data-budget="7000">Under Rs. 7,000</button></div></div><div class="gift-footer"><span>✷</span> A few lovely ideas, just for you</div></div><div class="gift-picks"><div class="gift-picks-head"><span>YOUR MAGIC MATCHES</span><span id="gift-match-count">3 IDEAS</span></div><div id="gift-results" class="gift-result-grid"></div></div></div></section>
+    <section class="manifesto-section" id="story"><div class="container manifesto-inner reveal"><div class="manifesto-copy"><span class="eyebrow">WHY PLAYHAUS?</span><h2>Serious about<br><i>not being</i> serious.</h2><p>Because the best childhood memories rarely come in a box — they happen when the box becomes a spaceship, a castle, or something nobody's ever imagined.</p><a href="#shop" class="text-link dark-link">Back to the happy shelf ↗</a></div><div class="manifesto-cards"><div class="manifesto-float mf-one"><b>✦</b><strong>Play more</strong><small>Curiosity first</small></div><div class="manifesto-photo"><img src="images/toys/blocks.webp" alt="Colorful wooden alphabet blocks"/></div><div class="manifesto-float mf-two"><b>♡</b><strong>Dream bigger</strong><small>A world of wonder</small></div></div></div></section>
+    <section class="newsletter-section container reveal" id="contact"><div><span class="eyebrow">LOVE A LITTLE SURPRISE?</span><h2>Good news. <i>Great toys.</i></h2><p>Sign up to preview how a toy shop newsletter could work.</p></div><form id="newsletter-form"><label class="sr-only" for="newsletter-email">Email address</label><input type="email" id="newsletter-email" placeholder="Your email address" required/><button type="submit">Join the club ↗</button></form></section>
+  </main>
+  <footer class="site-footer"><div class="container"><div class="footer-main"><div><a class="brand footer-brand" href="#top"><span class="brand-flower">✳</span><span>play<span class="brand-different">haus</span><small>THE HAPPY TOY CLUB</small></span></a><p>Made for make-believe.<br>Inspired by the everyday magic of play.</p></div><div class="footer-links"><div><b>EXPLORE</b><a href="#collections">Collections</a><a href="#shop">All toys</a><a href="#gift-finder">Gift finder</a></div><div><b>PLAYHAUS</b><a href="#story">Our story</a><a href="#contact">Newsletter</a><a href="#top">Back to top ↗</a></div></div><div class="footer-note">SMALL<br>HANDS.<br><i>BIG</i><br>DREAMS.<span>✳</span></div></div><div class="footer-bottom"><span>© 2026 PLAYHAUS — CONCEPT STORE</span><span>FICTIONAL PRODUCTS & PRICES · NO REAL ORDERS OR PAYMENTS</span><a href="#top">TO THE TOP ↑</a></div></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="cart-drawer" aria-label="Shopping bag" aria-hidden="true"><div class="drawer-header"><div><span class="eyebrow">YOUR LITTLE TREASURES</span><h2>Your bag <span id="drawer-count">(0)</span></h2></div><button class="close-btn" data-close aria-label="Close cart">✕</button></div><div class="drawer-items" id="cart-items"></div><div class="drawer-bottom" id="cart-bottom"></div></aside>
+  <aside class="drawer" id="wishlist-drawer" aria-label="Saved toys" aria-hidden="true"><div class="drawer-header"><div><span class="eyebrow">TOYS WE LOVE</span><h2>Saved favorites</h2></div><button class="close-btn" data-close aria-label="Close saved toys">✕</button></div><div class="drawer-items" id="wishlist-items"></div></aside>
+  <div class="product-modal-shell" id="product-modal" role="dialog" aria-modal="true" aria-label="Toy details" hidden></div>
+  <div class="checkout-shell" id="checkout-shell" role="dialog" aria-modal="true" aria-label="Checkout demonstration" hidden></div>
+</body>
+</html>
